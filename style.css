@@ -1,0 +1,68 @@
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+   :root {
+      --color: black;
+      --font-family: 'Manrope', sans-serif;
+  }
+  
+  header {
+      position: relative;
+      inset: 0;
+      width: 100%;
+      height: fit-content;
+      z-index: 11;
+  }
+  
+  body {
+      font-family: var(--font-family);
+  }
+  
+  .slides-container {
+      border: 2px solid transparent;
+  }
+  
+  .testimonial-container {
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+  }
+  
+  .testimonial-container .card {
+      scroll-snap-align: center;
+  }
+  
+  .testimonial-container::-webkit-scrollbar {
+      width: 0;
+  }
+  
+  .hero {
+      background-image: url("./photographs/pexels-mario-cuadros-2651248.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  header a:hover {
+      transition: color 0.5s ease;
+      color: aquamarine !important;
+  }
+  
+  body::-webkit-scrollbar {
+      background: var(--bs-success);
+      width: 10px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+      width: 6px;
+      background: green;
+      border-radius: 10px;
+  }
+  
+  .card img.rounded-3 {
+      height: 20rem !important;
+      object-fit: cover;
+  }
